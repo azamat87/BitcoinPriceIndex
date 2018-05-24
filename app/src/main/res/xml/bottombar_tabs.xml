@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/action_main"
+        icon="@drawable/tab_icon_1"
+        title="@string/txt.bottom.tab1"/>
+    <tab
+        id="@+id/action_transaction"
+        icon="@drawable/tab_icon_2"
+        title="@string/txt.bottom.tab2"/>
+    <tab
+        id="@+id/action_converter"
+        icon="@drawable/tab_icon_3"
+        title="@string/txt.bottom.tab3"/>
+</tabs>

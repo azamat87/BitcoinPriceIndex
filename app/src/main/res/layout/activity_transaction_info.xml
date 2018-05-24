@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="azamat.kz.bitcoinpriceindex.ui.activity.TransactionInfoActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                >
+                <TextView
+                    android:id="@+id/tv_type_info"
+                    style="@style/TvDateStyle"
+                    android:text="Sell"
+                    android:drawableStart="@drawable/ic_chart"
+                    android:drawablePadding="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    />
+                <TextView
+                    android:id="@+id/tv_date_info"
+                    style="@style/TvDateStyle"
+                    android:text="10.20.2001"
+                    android:gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_id_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/grey_line"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    style="@style/TvDateStyle"
+                    android:text="@string/txt.item.price"/>
+
+                <TextView
+                    android:id="@+id/tv_price_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    style="@style/TvDateStyle"
+                    android:text="@string/txt.item.amount" />
+
+                <TextView
+                    android:id="@+id/tv_amount_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    style="@style/TvDateStyle"
+                    android:text="@string/txt.item.total" />
+
+                <TextView
+                    android:id="@+id/tv_total_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
